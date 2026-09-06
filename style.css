@@ -1,0 +1,133 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #555;
+}
+
+.input-box button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.input-box button:hover {
+    background-color: #444;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+th,
+td {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+th:first-child {
+    width: 55%;
+}
+
+th:nth-child(2) {
+    width: 25%;
+}
+
+.actions-heading {
+    width: 20%;
+    text-align: center;
+}
+
+td:nth-child(2) {
+    color: #666;
+    font-size: 14px;
+}
+
+td:last-child {
+    text-align: center;
+    white-space: nowrap;
+}
+
+tr:hover {
+    background-color: #f8f8f8;
+}
+
+.edit-btn,
+td:last-child button {
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.edit-btn {
+    background-color: #f0ad4e;
+    color: white;
+    margin-right: 4px;
+}
+
+.edit-btn:hover {
+    background-color: #ec971f;
+}
+
+td:last-child button:not(.edit-btn) {
+    background-color: #dc3545;
+    color: white;
+}
+
+td:last-child button:not(.edit-btn):hover {
+    background-color: #bb2d3b;
+}
